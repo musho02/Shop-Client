@@ -13,7 +13,7 @@ const Navbar = ({ token, role, handleLogout }) => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <Link to="/home">LOGOOO</Link>
+                <Link to="/home">LOGO</Link>
             </div>
             <ul className="navbar-links">
                 <li>
