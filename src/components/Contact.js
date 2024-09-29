@@ -1,7 +1,7 @@
 import React from 'react';
 import RowComponent from './RowComponent';
 import ColorStrip from './ColorStrip';
-import ad1 from '../Adv/ad1.jpg'
+import ad1 from '../Adv/ad1.png'
 import ContentBox from './ContentBox';
 import Footer from './Footer';
 import './Contact.css'
