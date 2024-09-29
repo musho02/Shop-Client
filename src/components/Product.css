@@ -1,0 +1,56 @@
+/* ตัวกำหนดทั่วไปสำหรับหน้า form */
+form {
+    display: flex;
+    flex-direction: column; /* จัดเรียงองค์ประกอบในแนวตั้ง */
+    max-width: 600px; /* ขนาดสูงสุดของ form */
+    margin: 20px auto; /* จัดกึ่งกลาง */
+    padding: 20px; /* ช่องว่างภายใน */
+    border: 1px solid #ccc; /* ขอบของ form */
+    border-radius: 8px; /* ขอบมน */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงา */
+    background-color: #fff; /* พื้นหลัง */
+}
+
+/* ตัวกำหนดสไตล์สำหรับ input fields */
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    padding: 10px; /* ช่องว่างภายใน */
+    margin-bottom: 15px; /* ช่องว่างระหว่าง input */
+    border: 1px solid #ccc; /* ขอบ */
+    border-radius: 4px; /* ขอบมน */
+    font-size: 16px; /* ขนาดฟอนต์ */
+}
+
+/* ตัวกำหนดสไตล์สำหรับ textarea */
+textarea {
+    padding: 10px; /* ช่องว่างภายใน */
+    margin-bottom: 15px; /* ช่องว่างระหว่าง textarea */
+    border: 1px solid #ccc; /* ขอบ */
+    border-radius: 4px; /* ขอบมน */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    resize: vertical; /* ทำให้สามารถปรับขนาดได้เฉพาะในแนวดิ่ง */
+    min-height: 150px; /* ความสูงขั้นต่ำ */
+}
+
+/* ตัวกำหนดสไตล์สำหรับปุ่ม */
+button {
+    padding: 10px 15px; /* ช่องว่างภายใน */
+    background-color: #007bff; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 4px; /* ขอบมน */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+    transition: background-color 0.3s; /* เปลี่ยนสีพื้นหลังเมื่อชี้ */
+}
+
+button:hover {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อชี้ */
+}
+
+/* สไตล์สำหรับข้อความแจ้งเตือน */
+.alert {
+    margin-top: 15px; /* ช่องว่างด้านบน */
+    color: red; /* สีแดง */
+}

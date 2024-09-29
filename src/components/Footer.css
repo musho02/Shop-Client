@@ -1,0 +1,35 @@
+.footer {
+    display: flex; /* ทำให้เรียงตามแนวนอน */
+    justify-content: space-between; /* จัดเรียงพื้นที่ให้เท่ากัน */
+    padding: 20px;
+    background-color: var(--foot-color); /* สีพื้นหลังของ Footer */
+    color: var(--off-nav-color);
+}
+
+.footer-section {
+    flex: 1; /* ให้แต่ละหมวดมีขนาดเท่ากัน */
+    margin: 0 10px; /* เว้นระยะระหว่างหมวด */
+}
+
+.footer-section h4 {
+    margin: 0; /* ปรับ margin ของหัวข้อ */
+}
+
+.subtopics {
+    list-style-type: none; /* เอาจุดที่หน้าหัวข้อย่อยออก */
+    padding: 0; /* เอา padding ออก */
+    margin: 0; /* เอา margin ออก */
+}
+
+.subtopics li {
+    margin: 5px 0; /* ระยะห่างระหว่างหัวข้อย่อย */
+}
+
+.subtopics a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.subtopics a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+:root {
+  --bg-color: #F2789F;
+  --text-color: #FEE3EC;
+  --hover-color: #F9C5D5;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--bg-color);
+}
+
+.navbar-logo a,
+.navbar-links a {
+  color: var(--text-color);
+}
+
+.navbar-links a:hover {
+  color: var(--hover-color);
+}

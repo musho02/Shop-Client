@@ -1,0 +1,56 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  /* หักความสูงของ navbar */
+}
+
+.login-card {
+  background-color: var(--nav-color);
+  /* สีพื้นหลังของการ์ด */
+  color: var(--text-color);
+  /* สีตัวอักษร */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.login-card h2 {
+  text-align: center;
+}
+
+.login-card input {
+  width: 100%;
+  /* กำหนดความกว้างเป็น 100% */
+  padding: 10px;
+  margin: 10px auto;
+  /* ใช้ auto เพื่อจัดให้อยู่กลาง */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--off-nav-color);
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  /* ให้รวม padding และ border ในความกว้าง */
+}
+
+.login-card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-card button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+.login-card p {
+  text-align: center;
+}

@@ -1,0 +1,61 @@
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* จัดกลางในแนวตั้ง */
+  padding: 20px;
+  background-color: var(--bg-color); /* สีพื้นหลังสำหรับ container */
+  border-radius: 8px; /* มุมที่โค้ง */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 400px; /* ขนาดสูงสุดของภาพ */
+  height: auto; /* ให้คงอัตราส่วนภาพ */
+  margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+  border-radius: 8px; /* มุมที่โค้ง */
+}
+
+.detail-name {
+  font-size: 24px; /* ขนาดตัวอักษร */
+  font-weight: bold; /* ทำให้ตัวหนา */
+  color: var(--off-nav-color); /* สีตัวอักษร */
+  margin: 10px 0; /* ระยะห่างด้านบนและด้านล่าง */
+  text-align: center; /* จัดกลาง */
+}
+
+.detail-description {
+  font-size: 16px; /* ขนาดตัวอักษร */
+  color: var(--off-nav-color); /* สีตัวอักษร */
+  margin: 10px 0; /* ระยะห่างด้านบนและด้านล่าง */
+  text-align: justify; /* จัดเรียงข้อความให้เต็มบรรทัด */
+}
+
+.detail-price {
+  font-size: 20px; /* ขนาดตัวอักษร */
+  font-weight: bold; /* ทำให้ตัวหนา */
+  color: var(--nav-color); /* สีตัวอักษร */
+  margin: 10px 0; /* ระยะห่างด้านบนและด้านล่าง */
+}
+
+.add-to-basket-button {
+  padding: 10px 20px; /* ระยะห่างในปุ่ม */
+  background-color: var(--nav-color); /* สีพื้นหลัง */
+  color: var(--text-color); /* สีตัวอักษร */
+  border: none; /* ไม่ให้มีขอบ */
+  border-radius: 5px; /* มุมที่โค้ง */
+  cursor: pointer; /* เปลี่ยนเป็น cursor pointer */
+  transition: background-color 0.3s; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+.add-to-basket-button:hover {
+  background-color: var(--text-color); /* เปลี่ยนสีเมื่อ hover */
+  color: var(--nav-color);
+}
+
+/* ปุ่ม Show More / Show Less */
+button {
+  color: var(--off-nav-color); /* สีตัวอักษร */
+  cursor: pointer; /* เปลี่ยนเป็น cursor pointer */
+  margin-left: 5px; /* ระยะห่างด้านซ้าย */
+}

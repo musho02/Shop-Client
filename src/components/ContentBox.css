@@ -1,0 +1,29 @@
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    background-color: transparent;
+    flex-wrap: wrap; /* สำหรับทำให้ responsive */
+}
+  
+.left-box-content,
+.right-box-content {
+    flex: 1 1 40%; /* ให้แต่ละกล่องใช้พื้นที่ 40% */
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00000038;
+    box-sizing: border-box; /* ให้รวม padding ไว้ในขนาดกล่อง */
+    margin: 10px; /* เพิ่ม margin เพื่อให้มีระยะห่างระหว่างกล่อง */
+}
+
+@media screen and (max-width: 600px) {
+    .left-box-content,
+    .right-box-content {
+        flex: 1 1 100%; /* แสดงเป็นแถวเดียวกันบนหน้าจอขนาดเล็ก */
+    }
+}

@@ -1,0 +1,18 @@
+.Contack-button {
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 50px;
+}
+
+.Contack-button:hover {
+    background-color: var(--text-color);
+    color: var(--nav-color);
+}
+
+RowComponent {
+    color: var(--grey-color);
+}

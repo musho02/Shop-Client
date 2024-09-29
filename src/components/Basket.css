@@ -1,0 +1,70 @@
+.basket-container {
+    padding: 20px;
+  }
+  
+  .basket-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--nav-color);
+    color: var(--text-color);
+  }
+  
+  .basket-image {
+    width: 80px; /* กำหนดความกว้างของรูปภาพ */
+    height: 80px; /* กำหนดความสูงของรูปภาพ */
+    object-fit: cover; /* ปรับรูปภาพให้พอดีกับขนาด */
+    border-radius: 4px;
+  }
+  
+  .basket-item h3 {
+    flex: 1; /* ให้ชื่อสินค้าขยายเต็มที่ */
+    margin: 0 10px; /* เว้นระยะจากส่วนอื่น */
+  }
+  
+  .basket-item p {
+    margin-left: 10px;
+  }
+  
+  .remove-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #f44336; /* สีแดง */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    background-color: #d32f2f; /* เปลี่ยนสีเมื่อ hover */
+  }
+  
+  .basket-summary {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #4caf50;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .checkout-button {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #4caf50; /* สีเขียว */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .checkout-button:hover {
+    background-color: #388e3c; /* เปลี่ยนสีเมื่อ hover */
+  }
+  
