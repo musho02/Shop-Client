@@ -59,6 +59,8 @@
 
 .theme-dropdown-container {
   margin-left: 1rem;
+  background-color: transparent;
+  border: 0;
 }
 
 .logout {
