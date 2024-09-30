@@ -4,54 +4,48 @@
     gap: 16px;
     padding: 20px;
     justify-content: center;
-}
-
-.product-card {
+  }
+  
+  .product-card {
     border: 3px solid #ffffffac;
     padding: 16px;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.2s;
-    width: 200px;
+    width: 100%; /* ปรับให้เต็มพื้นที่ */
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.product-card:hover {
+  }
+  
+  .product-card:hover {
     background-color: #ffffff65;
     transform: translateY(-5px);
-}
-
-.products-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.product-image {
+  }
+  
+  .product-image {
     width: 100%;
+    height: auto; /* ปรับความสูงให้อัตโนมัติ */
     object-fit: cover;
     margin-bottom: 10px;
-}
-
-.product-name {
+  }
+  
+  .product-name {
     font-weight: bold;
     margin: 0;
     color: var(--off-nav-color);
-    display: -webkit-box; /* ใช้ flexbox เพื่อจัดการกับบรรทัด */
-    -webkit-box-orient: vertical; /* กำหนดแนวตั้ง */
-    overflow: hidden; /* ซ่อนข้อความที่เกิน */
-    -webkit-line-clamp: 2; /* จำกัดจำนวนบรรทัดที่แสดง */
-}
-
-.product-price {
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden; 
+    -webkit-line-clamp: 2; 
+  }
+  
+  .product-price {
     color: var(--off-nav-color);
-}
-
-.show-more-button {
+  }
+  
+  .show-more-button {
     padding: 10px 20px;
     margin: 20px auto;
     display: block;
@@ -61,48 +55,49 @@
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-.show-more-button:hover {
+  }
+  
+  .show-more-button:hover {
     background-color: #e05675;
-}
-
-.search-container {
+  }
+  
+  .search-container {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    /* จัดให้อยู่กลาง */
     margin-bottom: 20px;
-    /* เพิ่มระยะห่างด้านล่าง */
-}
-
-.search-container input {
+    flex-wrap: wrap; /* อนุญาตให้มีการห่อบรรทัด */
+  }
+  
+  .search-container input {
     padding: 10px;
     border: 1px solid #ccc;
-    /* สีขอบ */
     border-radius: 4px;
     margin-right: 10px;
-    /* ระยะห่างระหว่าง input กับปุ่ม */
-    width: 300px;
-    /* ความกว้างของ input */
-    height: 25px;
-}
-
-.search-container button {
+    width: 300px; /* ปรับขนาดให้เหมาะสม */
+    height: 40px; /* ปรับความสูง */
+  }
+  
+  .search-container button {
     padding: 10px 15px;
     background-color: var(--nav-color);
-    /* สีพื้นหลังของปุ่ม */
     color: var(--text-color);
-    /* สีตัวอักษร */
     border: 2px solid var(--bg-color);
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    height: 45px;
-}
-
-.search-container button:hover {
-    color: var(--nav-color);
-    border: 2px solid var(--nav-color);
-    background-color: var(--bg-color);
-}
+    height: 45px; /* ปรับความสูง */
+  }
+  
+  /* Media Queries สำหรับอุปกรณ์ขนาดเล็ก */
+  @media (max-width: 768px) {
+    .search-container input {
+      width: 100%; /* ปรับความกว้างให้เต็ม */
+      margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+    }
+  
+    .search-container button {
+      width: 100%; /* ปรับความกว้างให้เต็ม */
+    }
+  }
+  
