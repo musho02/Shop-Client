@@ -1,19 +1,14 @@
 .ad-banner {
-  width: 100%;
-  height: auto; /* เปลี่ยนความสูงเป็นอัตโนมัติเพื่อให้ปรับตัวตามเนื้อหา */
-  aspect-ratio: 16 / 9; /* กำหนดอัตราส่วนของภาพที่แนะนำ */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  display: flex; /* ใช้ flexbox */
+  justify-content: center; /* จัดให้ภาพอยู่กลาง */
+  align-items: center; /* จัดให้ภาพอยู่กลางในแนวตั้ง */
+  width: 100%; /* ให้ AdBanner มีความกว้าง 100% */
+  overflow: hidden; /* ซ่อนส่วนเกิน */
 }
 
-.ad-image {
-  width: 100%;
-  height: auto; /* ปรับความสูงให้อัตโนมัติ */
-  object-fit: cover; /* ทำให้ภาพปกคลุมพื้นที่ */
-  transition: opacity 0.5s ease-in-out;
+.ad-banner img {
+  max-width: 100%; /* ให้ภาพปรับขนาดตามความกว้าง */
+  height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
 }
 
 /* เพิ่ม media queries เพื่อปรับแต่งการแสดงผลสำหรับหน้าจอเล็ก */
