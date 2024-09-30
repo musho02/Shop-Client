@@ -11,7 +11,7 @@ const About = () => {
         <div>
             <RowComponent
                 leftContent={
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', width: '100%', textAlign: 'left', paddingLeft: '20px', paddingRight: '20px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', width: '100%', textAlign: 'left'}}>
                         <p style={{ fontSize: '48px', fontWeight: 'bolder', margin: '0px' }}>ประวัติของเรา</p>
                         <p style={{ fontSize: '18px' }}>Vaseline® ถือกำเนิดที่บรูคลินในปี 1870 ปัจจุบันมีจำหน่ายในกว่า 70 ประเทศ และได้รับการยกย่องว่าเป็นหนึ่งในแบรนด์ผลิตภัณฑ์สำหรับผิวมือและผิวกายชั้นนำของโลก</p>
                     </div>

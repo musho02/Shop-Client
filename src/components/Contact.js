@@ -11,7 +11,7 @@ const Contact = () => {
         <div>
             <RowComponent
                 leftContent={
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', width: '100%', textAlign: 'left', paddingLeft: '20px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', width: '100%', textAlign: 'left' }}>
                         <p style={{ fontSize: '48px', fontWeight: 'bolder', margin: '0px' }}>ติดต่อเรา</p>
                         <p style={{ fontSize: '18px' }}>เราพร้อมช่วยคุณ</p>
                     </div>
