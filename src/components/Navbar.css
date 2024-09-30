@@ -58,9 +58,13 @@
 }
 
 .theme-dropdown-container {
-  margin-left: 1rem;
+  margin-left: 0;
   background-color: transparent;
-  border: 0;
+}
+
+.theme-dropdown-container select {
+  background-color: transparent;
+  /* พื้นหลังของ select เป็นใส */
 }
 
 .logout {
@@ -122,6 +126,12 @@
 
   .theme-dropdown-container {
     margin-left: 0;
+    background-color: transparent;
+  }
+
+  .theme-dropdown-container select {
+    background-color: transparent;
+    /* พื้นหลังของ select เป็นใส */
   }
 
   .logout {
