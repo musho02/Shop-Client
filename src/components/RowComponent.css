@@ -5,6 +5,7 @@
   width: 100%;
   padding: 0px;
   flex-wrap: wrap; /* เพิ่มการจัดเรียงใหม่ */
+  overflow: hidden;
 }
 
 .left-content,
@@ -13,7 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .left-content {
@@ -39,5 +41,6 @@
   .left-content,
   .right-content {
     width: 100%; /* ให้ขนาดเต็มเมื่อหน้าจอเล็ก */
+    padding: 10px;
   }
 }
