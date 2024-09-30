@@ -1,7 +1,6 @@
 .footer {
     display: flex; /* เรียงตามแนวนอน */
     justify-content: space-between; /* จัดเรียงพื้นที่ให้เท่ากัน */
-    padding: 20px;
     background-color: var(--foot-color); /* สีพื้นหลังของ Footer */
     color: var(--off-nav-color);
     width: 100%; /* กำหนดความกว้างเต็ม 100% */
