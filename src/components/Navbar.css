@@ -127,7 +127,7 @@
   .theme-dropdown-container {
     margin-left: 0;
     background-color: transparent;
-    color: var(--off-nav-color);
+    color: var(--text-color);
   }
 
   .theme-dropdown-container select {

@@ -1,6 +1,6 @@
 .Contack-button {
     background-color: var(--nav-color);
-    color: var(--off-nav-color);
+    color: var(--text-color);
     border: 0;
     padding: 0;
     margin: 0;
@@ -10,7 +10,7 @@
 
 .Contack-button:hover {
     background-color: var(--text-color);
-    color: var(--off-nav-color);
+    color: var(--text-color);
 }
 
 @media (max-width: 768px) {
