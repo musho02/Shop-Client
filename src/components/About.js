@@ -19,7 +19,7 @@ const About = () => {
                 rightContent={<img src={ad1} alt="ad1" />}
             />
             <ColorStrip height="15px" width="100%" />
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', textAlign: 'center', color: '#000000'}}>
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', textAlign: 'center', color: '#000000' }}>
                 <h2 className='gradient' style={{ margin: '18px auto', padding: '0 0 25px 0', fontStyle: 'normal', fontWeight: '700', fontSize: '30px' }} >ช่วยรักษาผิวตลอดหลายศตวรรษ</h2>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                     <ColorStrip height="5px" width="9%" />
@@ -65,7 +65,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer style={{ width: '100%', padding: '20px 0' }} />
         </div>
     )
 };
