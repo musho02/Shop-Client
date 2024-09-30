@@ -40,6 +40,5 @@
   .left-content,
   .right-content {
     width: 100%; /* ให้ขนาดเต็มเมื่อหน้าจอเล็ก */
-    padding: 10px;
   }
 }
