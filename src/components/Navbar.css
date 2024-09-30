@@ -1,3 +1,78 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--nav-color);
+  color: var(--text-color);
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.115);
+}
+
+.navbar-logo {
+  display: flex;
+  /* ทำให้โลโก้อยู่ในแนวเดียวกับปุ่มเมนู */
+  align-items: center;
+}
+
+.navbar-logo a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  /* ซ่อนปุ่มเมนูไว้ก่อน */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  margin-left: auto;
+  /* ดันปุ่มไปด้านขวาสุด */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+}
+
+.navbar-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  color: var(--hover-color);
+}
+
+.theme-dropdown-container {
+  margin-left: 1rem;
+}
+
+.logout {
+  background-color: transparent;
+  border: none;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: var(--nav-color);
+  background-color: var(--bg-color);
+}
+
 /* Media query for responsive design */
 @media (max-width: 768px) {
   .navbar {
