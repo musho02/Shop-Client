@@ -26,7 +26,7 @@ const Contact = () => {
                 leftContent={
                     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', textAlign: 'center', alignItems: 'center' }}>
                         <span style={{ fontSize: '80px', pointerEvents: 'none' }}>&#9993;</span>
-                        <p style={{ fontSize: '48px', fontWeight: 'bolder', margin: '0px' }}>ส่งอีเมลหาเรา</p>
+                        <p style={{ fontSize: '36px', fontWeight: 'bolder', margin: '0px' }}>ส่งอีเมลหาเรา</p>
                         <p style={{ fontSize: '18px' }}>ส่งอีเมลหาเรา - เราจะติดต่อกลับหาคุณโดยเร็วที่สุด</p>
                         <button className='Contact-button'>ส่งอีเมลหาเรา</button>
                     </div>
@@ -34,7 +34,7 @@ const Contact = () => {
                 rightContent={
                     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', textAlign: 'center', alignItems: 'center' }}>
                         <span style={{ fontSize: '80px', pointerEvents: 'none' }}>&#63;</span>
-                        <p style={{ fontSize: '48px', fontWeight: 'bolder', margin: '0px' }}>คำถามที่พบบ่อย</p>
+                        <p style={{ fontSize: '36px', fontWeight: 'bolder', margin: '0px' }}>คำถามที่พบบ่อย</p>
                         <p style={{ fontSize: '18px' }}>เรียนรู้เพิ่มเติมเกี่ยวกับ Vaseline®</p>
                         <button className='Contact-button'>ดูคำถามที่พบบ่อย</button>
                     </div>

@@ -6,6 +6,7 @@
     width: 100%; /* กำหนดความกว้างเต็ม 100% */
     box-sizing: border-box; /* รวม padding และ border ไว้ในขนาดของ element */
     margin: 0; /* ตั้งค่า margin เป็น 0 */
+    padding-top: 5vh;
 }
 
 .footer-section {
