@@ -11,12 +11,12 @@ const About = () => {
         <div>
             <RowComponent
                 leftContent={
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', width: '100%', textAlign: 'left', paddingLeft: '120px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'start', width: '100%', textAlign: 'left', paddingLeft: '20px', paddingRight: '20px' }}>
                         <p style={{ fontSize: '48px', fontWeight: 'bolder', margin: '0px' }}>ประวัติของเรา</p>
                         <p style={{ fontSize: '18px' }}>Vaseline® ถือกำเนิดที่บรูคลินในปี 1870 ปัจจุบันมีจำหน่ายในกว่า 70 ประเทศ และได้รับการยกย่องว่าเป็นหนึ่งในแบรนด์ผลิตภัณฑ์สำหรับผิวมือและผิวกายชั้นนำของโลก</p>
                     </div>
                 }
-                rightContent={<img src={ad1} alt="ad1" />}
+                rightContent={<img src={ad1} alt="ad1" style={{ maxWidth: '100%', height: 'auto' }} />}
             />
             <ColorStrip height="15px" width="100%" />
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', textAlign: 'center', color: '#000000' }}>
@@ -65,7 +65,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Footer style={{ width: '100%' }} />
+            <Footer />
         </div>
     )
 };

@@ -41,6 +41,7 @@
 /* Media Queries เพื่อปรับรูปแบบสำหรับหน้าจอขนาดเล็ก */
 @media (max-width: 768px) {
     .footer {
+        width: 100%;
         flex-direction: column;
         /* เปลี่ยนเป็นเรียงแนวตั้ง */
         align-items: center;
