@@ -65,7 +65,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Footer style={{ width: '100%', padding: '20px 0' }} />
+            <Footer style={{ width: '100%' }} />
         </div>
     )
 };
