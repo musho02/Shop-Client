@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import ThemeDropdown from './ThemeDropdown';
 import './Navbar.css';
 
 const Navbar = ({ token, role, handleLogout }) => {
     const navigate = useNavigate();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleLogoutClick = () => {
         handleLogout();
         navigate('/');
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
     return (
         <nav className="navbar">
             <div className="navbar-logo">
                 <Link to="/home">LOGO</Link>
             </div>
-            <ul className="navbar-links">
+            <div className="menu-icon" onClick={toggleMenu}>
+                {/* Icon สำหรับ Hamburger Menu */}
+                ☰
+            </div>
+            <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
                 <li>
                     <Link to="/home">Home</Link>
                 </li>
@@ -32,8 +41,8 @@ const Navbar = ({ token, role, handleLogout }) => {
                 </li>
                 {token ? (
                     <li>
-                    <Link to="/basket">Basket</Link>
-                </li>) : null }
+                        <Link to="/basket">Basket</Link>
+                    </li>) : null}
                 {!token ? (
                     <li>
                         <Link to="/">Login</Link>

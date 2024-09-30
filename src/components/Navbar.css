@@ -19,6 +19,13 @@
   text-decoration: none;
 }
 
+.menu-icon {
+  display: none;
+  /* ซ่อนปุ่มเมนูไว้ก่อน */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .navbar-links {
   list-style: none;
   display: flex;
@@ -60,25 +67,43 @@
 /* Media query for responsive design */
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column; /* จัดการให้ Navbar เป็นแนวตั้งเมื่อหน้าจอเล็ก */
-      align-items: flex-start;
-      padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .menu-icon {
+    display: block;
+    /* แสดงปุ่มเมนู */
+    color: var(--text-color);
+    margin-left: auto;
   }
 
   .navbar-links {
-      flex-direction: column; /* ทำให้ลิงก์เรียงตามแนวตั้ง */
-      width: 100%;
+    flex-direction: column;
+    display: none;
+    /* ซ่อนเมนูเริ่มต้น */
+    width: 100%;
+    background-color: var(--nav-color);
+    padding: 0;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    /* แสดงเมนูเมื่อคลิกที่ปุ่ม */
   }
 
   .navbar-links li {
-      margin: 0.5rem 0; /* ปรับระยะห่างของรายการเมนู */
+    margin: 0.5rem 0;
+    text-align: center;
+    width: 100%;
   }
-  
+
   .theme-dropdown-container {
-      margin-left: 0; /* จัดตำแหน่ง dropdown ให้เริ่มต้น */
+    margin-left: 0;
   }
 
   .logout {
-      width: 100%; /* ให้ปุ่ม logout เต็มความกว้าง */
+    width: 100%;
   }
 }
