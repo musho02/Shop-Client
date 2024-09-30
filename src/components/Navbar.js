@@ -16,7 +16,7 @@ const Navbar = ({ token, role, handleLogout }) => {
         setIsMenuOpen(!isMenuOpen);
     };
     return (
-        <nav className="navbar">
+        <nav className="navbar" style={{ padding: '0' }}>
             <div className="navbar-logo">
                 <Link to="/home">LOGO</Link>
             </div>
