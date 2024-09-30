@@ -60,6 +60,7 @@
 .theme-dropdown-container {
   margin-left: 0;
   background-color: transparent;
+  color: var(--text-color);
 }
 
 .theme-dropdown-container select {
@@ -127,6 +128,7 @@
   .theme-dropdown-container {
     margin-left: 0;
     background-color: transparent;
+    color: var(--text-color);
   }
 
   .theme-dropdown-container select {

@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className="footer-section">
                     <h4>ความช่วยเหลือ</h4>
                     <ul className="subtopics">
-                        <li><a href='/contrack'>ติดต่อเรา</a></li>
+                        <li><a href='/contack'>ติดต่อเรา</a></li>
                         <li><a href='#'>คำถามที่พบบ่อย</a></li>
                     </ul>
                 </div>

@@ -1,19 +1,19 @@
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    /* ทำให้ยืดหยุ่นและรองรับหลายบรรทัด */
-    justify-content: space-between;
+    display: flex; /* เรียงตามแนวนอน */
+    justify-content: space-between; /* จัดเรียงพื้นที่ให้เท่ากัน */
     padding: 20px;
-    background-color: var(--foot-color);
+    background-color: var(--foot-color); /* สีพื้นหลังของ Footer */
     color: var(--off-nav-color);
+    width: 100%; /* กำหนดความกว้างเต็ม 100% */
+    box-sizing: border-box; /* รวม padding และ border ไว้ในขนาดของ element */
+    margin: 0; /* ตั้งค่า margin เป็น 0 */
 }
 
 .footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
-    /* กำหนดขนาดขั้นต่ำให้แต่ละ section */
+    flex: 1; /* ให้แต่ละหมวดมีขนาดเท่ากัน */
+    margin: 0 10px; /* เว้นระยะระหว่างหมวด */
 }
+
 
 .footer-section h4 {
     margin: 0 0 10px 0;

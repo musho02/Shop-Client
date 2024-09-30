@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  width: 100%; /* กำหนดความกว้างเต็ม 100% */
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40vmin; /* ความสูงแบบ responsive */
+  max-height: 200px; /* กำหนดความสูงสูงสุด */
   pointer-events: none;
 }
 
@@ -20,12 +22,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(1rem + 2vmin); /* ทำให้ขนาดตัวอักษร responsive */
   color: white;
+  padding: 1rem; /* เพิ่ม padding เพื่อให้ไม่ชิดขอบ */
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none; /* ปิดการขีดเส้นใต้ */
+  font-size: calc(0.8rem + 1vmin); /* ทำให้ขนาดตัวอักษร responsive */
+}
+
+.App-link:hover {
+  text-decoration: underline; /* ขีดเส้นใต้เมื่อ hover */
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +43,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Media Queries สำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 0.5rem; /* ปรับ padding สำหรับหน้าจอเล็ก */
+  }
+
+  .App-link {
+    font-size: calc(0.6rem + 1vmin); /* ปรับขนาดตัวอักษรสำหรับหน้าจอเล็ก */
   }
 }
