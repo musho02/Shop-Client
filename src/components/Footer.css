@@ -1,28 +1,33 @@
 .footer {
-    display: flex; /* ทำให้เรียงตามแนวนอน */
-    justify-content: space-between; /* จัดเรียงพื้นที่ให้เท่ากัน */
+    display: flex;
+    flex-wrap: wrap;
+    /* ทำให้ยืดหยุ่นและรองรับหลายบรรทัด */
+    justify-content: space-between;
     padding: 20px;
-    background-color: var(--foot-color); /* สีพื้นหลังของ Footer */
+    background-color: var(--foot-color);
     color: var(--off-nav-color);
 }
 
 .footer-section {
-    flex: 1; /* ให้แต่ละหมวดมีขนาดเท่ากัน */
-    margin: 0 10px; /* เว้นระยะระหว่างหมวด */
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    /* กำหนดขนาดขั้นต่ำให้แต่ละ section */
 }
 
 .footer-section h4 {
-    margin: 0; /* ปรับ margin ของหัวข้อ */
+    margin: 0 0 10px 0;
+    /* ปรับ margin ของหัวข้อ */
 }
 
 .subtopics {
-    list-style-type: none; /* เอาจุดที่หน้าหัวข้อย่อยออก */
-    padding: 0; /* เอา padding ออก */
-    margin: 0; /* เอา margin ออก */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .subtopics li {
-    margin: 5px 0; /* ระยะห่างระหว่างหัวข้อย่อย */
+    margin: 5px 0;
 }
 
 .subtopics a {
@@ -32,4 +37,21 @@
 
 .subtopics a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries เพื่อปรับรูปแบบสำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        /* เปลี่ยนเป็นเรียงแนวตั้ง */
+        align-items: center;
+        /* จัดกึ่งกลาง */
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        /* ปรับระยะห่างระหว่าง section */
+        text-align: center;
+        /* จัดข้อความกึ่งกลาง */
+    }
 }
