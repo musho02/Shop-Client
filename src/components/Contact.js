@@ -19,7 +19,7 @@ const Contact = () => {
                 rightContent={<img src={ad1} alt="ad1" style={{ maxWidth: '100%', height: 'auto' }} />}
             />
             <ColorStrip height="15px" width="100%" />
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', textAlign: 'center', color: '#000000', padding: '0 20px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', textAlign: 'center', color: '#000000' }}>
                 <p style={{ fontSize: '24px' }}>ไม่ว่าคุณจะกำลังมองหาเคล็ดลับการดูแลผิว ข้อมูลเพิ่มเติมเกี่ยวกับผลิตภัณฑ์ของเรา หรือต้องการแชร์ความคิดเห็น เราก็พร้อมรับฟัง คุณสามารถติดต่อเราผ่าน Live แชท อีเมล และหรือติดต่อร้านค้าปลีกของเรา!</p>
             </div>
             <ContentBox
