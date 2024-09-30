@@ -26,11 +26,4 @@
         font-size: 16px;
         /* ขนาดฟอนต์เล็กลง */
     }
-
-    /* Adjust the padding for containers */
-    .left-content,
-    .right-content {
-        padding: 0 20px;
-        /* Padding ข้างใน */
-    }
 }
