@@ -18,6 +18,7 @@ const Login = ({ setToken, setRole, setName, setUserId }) => {
       navigate('/home');
     } catch (error) {
       console.error('Login error:', error);
+      alert('Login failed: ' + (error.response?.data?.message || 'Please try again.'));
     }
   };
 
