@@ -10,7 +10,7 @@ const Basket = ({ userId }) => {
 
   const handleRemoveItem = (productId) => {
     axios
-      .delete(`http://localhost:5000/removeFromBasket?userId=${userId}&productId=${productId}`)
+      .delete(`https://shop-web-95o8.onrender.com/removeFromBasket?userId=${userId}&productId=${productId}`)
       .then(() => {
         fetchBasketItems();
       })
@@ -19,7 +19,7 @@ const Basket = ({ userId }) => {
 
   const fetchBasketItems = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/getBasketItems?userId=${userId}`);
+      const response = await axios.get(`https://shop-web-95o8.onrender.com/getBasketItems?userId=${userId}`);
       setBasketItems(response.data);
     } catch (error) {
       console.error('Error fetching basket items:', error);

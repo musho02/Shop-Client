@@ -10,7 +10,7 @@ const Login = ({ setToken, setRole, setName, setUserId }) => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/login', { username, password });
+      const response = await axios.post('https://shop-web-95o8.onrender.com/login', { username, password });
       setToken(response.data.token);
       setRole(response.data.role);
       setName(response.data.name);

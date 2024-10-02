@@ -30,7 +30,7 @@ const Product = ({ token }) => {
     formData.append('prod_image', prod_image);
 
     try {
-      const response = await axios.post('http://localhost:5000/products', formData, {
+      const response = await axios.post('https://shop-web-95o8.onrender.com/products', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${token}`

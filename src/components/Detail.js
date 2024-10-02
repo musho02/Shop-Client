@@ -11,7 +11,7 @@ const Detail = ({ userId, productId }) => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const response = await axios.get(`http://localhost:5000/GetProductById?id=${productId}`);
+      const response = await axios.get(`https://shop-web-95o8.onrender.com/GetProductById?id=${productId}`);
       setProduct(response.data);
     };
 
@@ -26,7 +26,7 @@ const Detail = ({ userId, productId }) => {
 
     const qty = parseInt(prompt('Enter quantity:'), 10);
     if (qty && qty > 0) {
-      axios.post('http://localhost:5000/addToBasket', {
+      axios.post('https://shop-web-95o8.onrender.com/addToBasket', {
         userId,
         productId: product.id,
         quantity: qty,

@@ -17,7 +17,7 @@ const Home = ({ userId, setProductId }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/GetProduct');
+        const response = await axios.get('https://shop-web-95o8.onrender.com/GetProduct');
         setProducts(response.data);
         setFilteredProducts(response.data); // แสดงสินค้าทั้งหมดเริ่มต้น
       } catch (error) {
@@ -31,7 +31,7 @@ const Home = ({ userId, setProductId }) => {
   useEffect(() => {
     const fetchFilteredProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/searchProducts', {
+        const response = await axios.get('https://shop-web-95o8.onrender.com/searchProducts', {
           params: {
             name: searchTerm,
             category: searchCategory,
@@ -60,7 +60,7 @@ const Home = ({ userId, setProductId }) => {
     if (quantity && quantity > 0) {
       console.log('Adding to basket:', { userId, productId, quantity }); // Log the values
       axios
-        .post('http://localhost:5000/addToBasket', {
+        .post('https://shop-web-95o8.onrender.com/addToBasket', {
           userId,
           productId,
           quantity,

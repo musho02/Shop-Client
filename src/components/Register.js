@@ -10,7 +10,7 @@ const Register = ({ setToken, setRole }) => {
 
     const handleRegister = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/register', { username, password });
+            const response = await axios.post('https://shop-web-95o8.onrender.com/register', { username, password });
             setToken(response.data.token);
             setRole(response.data.role);
             navigate('/');
